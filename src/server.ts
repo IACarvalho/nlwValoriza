@@ -1,15 +1,15 @@
-import express, { response } from 'express'
+import 'reflect-metadata'
+import express from 'express'
+
+import { router } from './routes'
+
+import './database'
 
 const app = express()
 
-app.get('/tets', (request, reponse) => {
-  response.send("MLW Valoriza")
-})
+app.use(express.json())
 
-app.post('/test', (request, response) => {
-  response.json({
-    "message": "NLW Valoriza!"
-  })
-})
+app.use(router)
+
 
 app.listen(3333, () => console.log("The server is running at port 3333"))
