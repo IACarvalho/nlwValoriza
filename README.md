@@ -18,7 +18,7 @@ $ yarn install
 - Cadastro de TAG
   [x] Não é permitido cadastrar TAG sem nome
   [x] Não é permitido cadastrar mais de um TAG com o mesmo nome
-  [ ] Não é permitido o cadastro por usuário que não sejam administradores
+  [x] Não é permitido o cadastro por usuário que não sejam administradores
 
 - Cadastro de elogios
   [ ] Não é permitido um usuário cadastrar um elogio para si
@@ -26,3 +26,10 @@ $ yarn install
   [ ] O usuário precisa estar autenticado na aplicação
 
 # Resumo
+
+## Referencais
+
+- Documentação do JSON web token
+[JWT](https://jwt.io/)
+- Site usado para gerar o rash
+[MD5 Hash Generator](https://www.md5hashgenerator.com/)
